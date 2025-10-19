@@ -14,7 +14,7 @@ public class Profesor extends Personas{
     public double salarioHora;
     public int horasDictadas;
     
-    public Profesor(String nombre, int telefono, int nacimiento, String direccion,int cedula, String area, double salarioHora, int horasDictadas) {
+    public Profesor(String nombre, int telefono, String nacimiento, String direccion,int cedula, String area, double salarioHora, int horasDictadas) {
         super(nombre, telefono, nacimiento, direccion);
         
         this.cedula = cedula;

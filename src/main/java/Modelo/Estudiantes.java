@@ -10,7 +10,7 @@ package Modelo;
  */
 public class Estudiantes extends Personas {
     
-    public Estudiantes(String nombre, int telefono, int nacimiento, String direccion) {
+    public Estudiantes(String nombre, int telefono, String nacimiento, String direccion) {
         super(nombre, telefono, nacimiento, direccion);
     }
     

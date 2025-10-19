@@ -12,10 +12,10 @@ public class Personas {
     
     private String nombre;
     private int telefono;
-    private int nacimiento;
+    private String nacimiento;
     private String direccion;
 
-    public Personas(String nombre, int telefono, int nacimiento, String direccion) {
+    public Personas(String nombre, int telefono, String nacimiento, String direccion) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.nacimiento = nacimiento;
@@ -30,7 +30,7 @@ public class Personas {
         return telefono;
     }
 
-    public int getNacimiento() {
+    public String getNacimiento() {
         return nacimiento;
     }
 
@@ -46,7 +46,7 @@ public class Personas {
         this.telefono = telefono;
     }
 
-    public void setNacimiento(int nacimiento) {
+    public void setNacimiento(String nacimiento) {
         this.nacimiento = nacimiento;
     }
 
