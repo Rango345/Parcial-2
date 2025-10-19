@@ -9,12 +9,12 @@ package Modelo;
  * @author oeara
  */
 public class Profesor extends Personas{
-    private String cedula;
+    private int cedula;
     private String area;
     public double salarioHora;
     public int horasDictadas;
     
-    public Profesor(String nombre, int telefono, int nacimiento, String direccion,String cedula, String area, double salarioHora, int horasDictadas) {
+    public Profesor(String nombre, int telefono, int nacimiento, String direccion,int cedula, String area, double salarioHora, int horasDictadas) {
         super(nombre, telefono, nacimiento, direccion);
         
         this.cedula = cedula;
