@@ -67,7 +67,7 @@ public class Profesor extends Personas{
                "\nÁrea: " + area +
                "\nSalario por hora: " + salarioHora +
                "\nHoras dictadas: " + horasDictadas +
-               "\nPago mensual: " + pagoTotal +
+               "\nPago mensual total: " + pagoTotal +
                "\nPrestaciones: " + prestaciones;
     
 }
