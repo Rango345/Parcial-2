@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Modelo;
-
+import Vista.Menu;
 /**
  *
  * @author oeara
@@ -25,7 +25,7 @@ public class Salario {
 
     
     public static double calcularPrestaciones(Profesor profe) {
-        return calcularPagoMensual(profe) * 0.17;
+        return  profe.getPagoTotal() * 0.17;
     }
     
     

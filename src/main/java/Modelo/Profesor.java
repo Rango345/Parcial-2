@@ -13,6 +13,8 @@ public class Profesor extends Personas{
     private String area;
     public double salarioHora;
     public int horasDictadas;
+    private double pagoTotal;    
+    private double prestaciones;
     
     public Profesor(String nombre, int telefono, String nacimiento, String direccion,int cedula, String area, double salarioHora, int horasDictadas) {
         super(nombre, telefono, nacimiento, direccion);
@@ -30,6 +32,27 @@ public class Profesor extends Personas{
     public int getHorasDictadas() {
         return horasDictadas;
     }
+
+    public double getPagoTotal() {
+        return pagoTotal;
+    }
+
+    public double getPrestaciones() {
+        return prestaciones;
+    }
+
+    public void setPagoTotal(double pagoTotal) {
+        this.pagoTotal = pagoTotal;
+    }
+
+    public void setPrestaciones(double prestaciones) {
+        this.prestaciones = prestaciones;
+    }
+
+    public void setHorasDictadas(int horasDictadas) {
+        this.horasDictadas = horasDictadas;
+    }
+    
     
     
   
@@ -44,8 +67,8 @@ public class Profesor extends Personas{
                "\nÁrea: " + area +
                "\nSalario por hora: " + salarioHora +
                "\nHoras dictadas: " + horasDictadas +
-               "\nPago mensual: " + Salario.calcularPagoMensual(this) +
-               "\nPrestaciones: " + Salario.calcularPrestaciones(this);
+               "\nPago mensual: " + pagoTotal +
+               "\nPrestaciones: " + prestaciones;
     
 }
 }

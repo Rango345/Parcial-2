@@ -143,10 +143,14 @@ public class Menu {
             if (respuesta == JOptionPane.YES_OPTION) {
             int horasExtra = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántas horas extra trabajó?"));
             pagoFinal = Salario.calcularPagoMensual(profe, horasExtra); 
+            profe.setHorasDictadas(profe.getHorasDictadas() + horasExtra);
             } else {
             pagoFinal = Salario.calcularPagoMensual(profe);
              }
-           double prestaciones = Salario.calcularPrestaciones(profe);
+           double prestaciones = pagoFinal * 0.17;
+           
+           profe.setPagoTotal(pagoFinal);
+           profe.setPrestaciones(prestaciones);
            
           listaProfesores.add(profe);    
           JOptionPane.showMessageDialog(null, "Profesor agregado correctamente");
